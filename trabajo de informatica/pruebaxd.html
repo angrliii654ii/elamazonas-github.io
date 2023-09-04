@@ -1,0 +1,896 @@
+<html lang="es"><head>
+
+        <!-- TÍTULO -->
+        <title>Tutorial HTML : Introducción</title>
+
+        <!-- CANONICAL -->
+        <link rel="canonical" href="https://informaticapc.com/tutorial-html/">
+
+        <!-- META -->
+        <meta name="keywords" content="página web, html, xhtml, doctype, etiquetas, tags, estructura, head, body, crear una web">
+        <meta name="description" content="Aprende cómo crear una página web con nuestro tutorial de HTML gratis: estructura básica">
+
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<meta name="google-site-verification" content="WRiVdHAbvXtp3ZUI0_jgqNKJxo0ve3JnzCU8vXi7NP0">
+
+		<meta name="robots" content="all">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script src="https://informaticapc.com/base_js/lib.js"></script>
+        <script src="https://informaticapc.com/boostrap/js/bootstrap.min.js"></script>
+        <link href="https://informaticapc.com/boostrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="styleSheet" href="https://informaticapc.com/base_css/estilos.css">
+
+
+		<!--
+		<link href="https://fonts.googleapis.com/css?family=Noto Sans Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+		-->
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="Shortcut Icon" href="https://informaticapc.com/base_images/favicon.ico" type="image/x-icon">
+
+        <link rel="author" href="https://plus.google.com/102758072266058874829">
+        <link rel="publisher" href="https://plus.google.com/106945824829337795179">
+
+
+         <!-- JQUERY SYNTAX HIGHLIGHTER -->
+        <link rel="stylesheet" type="text/css" href="../base_css/jquery.snippet.min.css">
+        <script src="../base_js/jquery.snippet.min.js"></script>
+        <script src="../base_js/cursos-programacion-html.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- CONTENEDOR PRINCIPAL -->
+	<div class="container">
+
+            <a name="inicio"></a>
+
+            <!-- ENCABEZADO -->
+
+            <header>
+
+                <div class="row">
+                    <div class="col-xs-12 logo-imagen">
+                        <img src="../base_images/logo-g.jpg" class="img-responsive" alt="informaticaPC">
+                    </div>
+                </div>
+
+                <!-- MENÚ (nav) -->
+                <div class="row fila-menu">
+                    <div class="col-xs-12 col-menu">
+                        
+					<nav class="navbar navbar-default">
+
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Cambiar navegación</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="https://informaticapc.com/"><img src="https://informaticapc.com/base_images/home.png" id="img-home" alt="Inicio"></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav">
+                            <!-- Windows -->
+							<li><a href="https://informaticapc.com/blog/">Blog</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Windows<span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="https://informaticapc.com/microsoft-windows-7/">Windows 7</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-windows-vista/">Windows Vista</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-windows-xp/">Windows XP</a></li>
+                              </ul>
+                            </li>
+
+                            <!-- Office 2010 -->
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Office 2010<span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="https://informaticapc.com/microsoft-word-2010/">Word 2010</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-excel-2010/">Excel 2010</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-access-2010/">Access 2010</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-powerpoint-2010/">Powerpoint 2010</a></li>
+                              </ul>
+                            </li>
+
+                            <!-- Office 2003 -->
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Office 2003<span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="https://informaticapc.com/microsoft-word-2003/">Word 2003</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-excel-2003/">Excel 2003</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-access-2003/">Access 2003</a></li>
+                                <li><a href="https://informaticapc.com/microsoft-powerpoint-2003/">Powerpoint 2003</a></li>
+                              </ul>
+                            </li>
+
+                            <!-- OpenOffice -->
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">OpenOffice<span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="https://informaticapc.com/openoffice-writer/">OpenOffice Writer</a></li>
+                                <li><a href="https://informaticapc.com/openoffice-calc/">OpenOffice Calc</a></li>
+                                <li><a href="https://informaticapc.com/openoffice-base/">OpenOffice Base</a></li>
+                                <li><a href="https://informaticapc.com/openoffice-impress/">OpenOffice Impress</a></li>
+                              </ul>
+                            </li>
+
+                            <!-- Programación -->
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Programación<span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="https://informaticapc.com/teoria-de-la-programacion/">Teoría de la programación</a></li>
+                                <li><a href="https://informaticapc.com/poo/">Programación orientada a objetos (POO)</a></li>
+                                <li><a href="https://informaticapc.com/patrones-de-diseno/">Patrones de Diseño Software</a></li>
+                              </ul>
+                            </li>
+
+                            <!-- Programación Web-->
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Programación Web<span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="https://informaticapc.com/tutorial-html/">Tutorial HTML</a></li>
+                                <li><a href="https://informaticapc.com/tutorial-css/">Tutorial CSS</a></li>
+                                <li><a href="https://informaticapc.com/tutorial-javascript/">Tutorial JavaScript</a></li>
+                                <li><a href="https://informaticapc.com/curso-de-jquery/">Tutorial JQuery</a></li>
+                                <li><a href="https://informaticapc.com/tutorial-php/">Tutorial PHP</a></li>
+                                <li class="divider"></li>
+                                <li><a href="https://informaticapc.com/guias-instalacion-programas/instalar-apache-php-y-mysql.php">Instalar y configurar Apache, PHP y MySQL</a></li>
+                                <li><a href="https://informaticapc.com/guias-instalacion-programas/xampp-apache-php-mysql.php">Instalación de XAMPP</a></li>
+                                <li><a href="https://informaticapc.com/tutoriales/dominios-gratis.php">Registrar dominios gratis .tk</a></li>
+                                <li><a href="https://informaticapc.com/tutoriales/alojamiento-web-gratis-con-000webhost.php">Contratar alojamiento web gratis</a></li>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+
+					</nav>
+                    </div>
+                </div>
+
+        </header>
+
+
+
+	<!-- CONTENIDO -->
+
+	<div class="row equal">
+
+
+                <!-- COLUMNA DE LA IZQUIERDA -->
+
+                <div class="colprincipal col-xs-12 col-sm-4 col-md-3 hidden-xs" id="colI">
+
+                    <div class="bl-encabezado">
+                        <span class="encabCurso">TUTORIAL HTML</span>
+                    </div>
+
+                    <!-- MENÚ IZQUIERDA (nav) -->
+                    
+                            <div class="hg centrado"></div>
+
+							<nav class="bl-menu">
+
+					                    <ol class="lMenu">
+
+                                                                    <li><span>INTRODUCCIÓN</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="index.php">Crear una página web</a></li>
+                                                                             <li><a href="index.php#xhtml">HTML y XHTML</a></li>
+                                                                             <li><a href="index.php#necesito">¿Qué necesito para comenzar?</a></li>
+                                                                             <li><a href="index.php#estructura">Estructura básica de una página web</a></li>
+                                                                             <li><a href="index.php#head">&lt;head&gt;</a></li>
+                                                                             <li><a href="index.php#title">Título de la página</a></li>
+                                                                             <li><a href="index.php#meta">&lt;meta&gt;</a></li>
+                                                                             <li><a href="index.php#dochtml">Doctype (HTML)</a></li>
+                                                                             <li><a href="index.php#docxhtml">Doctype (XHTML)</a></li>
+                                                                             <li><a href="index.php#consideraciones">Escribir código XHTML válido</a></li>
+                                                                        </ol>
+
+                                                                     </li>
+
+                                                                    <li><span>TEXTO</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="texto.php">Insertar texto en una página web</a></li>
+                                                                             <li><a href="texto.php#formato">Dar formato al texto</a></li>
+                                                                             <li><a href="texto.php#oform">Otros formatos de texto</a></li>
+                                                                             <li><a href="texto.php#span">Agrupar texto con &lt;span&gt;</a></li>
+                                                                             <li><a href="texto.php#caracteres">Caracteres especiales en HTML</a></li>
+                                                                        </ol>
+
+                                                                     </li>
+
+                                                                    <li><span>IMÁGENES</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="imagenes.php">Insertar imágenes</a></li>
+                                                                             <li><a href="imagenes.php#mapa">Crear un mapa de imagen</a></li>
+                                                                        </ol>
+
+                                                                     </li>
+
+                                                                    <li><span>HIPERVÍNCULOS</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="enlaces.php">Enlaces</a></li>
+                                                                             <li><a href="enlaces.php#locales">Enlaces locales</a></li>
+                                                                             <li><a href="enlaces.php#externos">Enlaces externos</a></li>
+                                                                             <li><a href="enlaces.php#internos">Enlaces internos</a></li>
+                                                                             <li><a href="enlaces.php#otros">Otros enlaces</a></li>
+                                                                             <li><a href="enlaces.php#imagenes">Enlaces en imágenes</a></li>
+                                                                        </ol>
+
+                                                                     </li>
+
+                                                                    <li><span>LISTAS</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="listas.php">Crear listas</a></li>
+                                                                             <li><a href="listas.php#anidadas">Listas anidadas</a></li>
+                                                                             <li><a href="listas.php#definicion">Listas de definición</a></li>
+                                                                        </ol>
+
+                                                                    </li>
+
+                                                                    <li><span>TABLAS</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="tablas.php">Crear una tabla</a></li>
+                                                                             <li><a href="tablas.php#agfilas">Agrupar por filas</a></li>
+                                                                             <li><a href="tablas.php#agcols">Agrupar por columnas</a></li>
+                                                                             <li><a href="tablas.php#eje">Ejemplos de tablas</a></li>
+                                                                        </ol>
+
+                                                                    </li>
+
+                                                                    <li><span>FORMULARIOS</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="formularios.php">Crear un Formulario básico</a></li>
+                                                                             <li><a href="formularios.php#botones">Botones</a></li>
+                                                                             <li><a href="formularios.php#image">Image</a></li>
+                                                                             <li><a href="formularios.php#hidden">Hidden</a></li>
+                                                                             <li><a href="formularios.php#cutexto">Cuadros de texto</a></li>
+                                                                             <li><a href="formularios.php#password">Password</a></li>
+                                                                             <li><a href="formularios.php#textarea">Textarea</a></li>
+                                                                             <li><a href="formularios.php#radio">Radiobutton</a></li>
+                                                                             <li><a href="formularios.php#checkbox">Checkbox</a></li>
+                                                                             <li><a href="formularios.php#listad">Cuadros de lista desplegable</a></li>
+                                                                             <li><a href="formularios.php#file">File</a></li>
+                                                                             <li><a href="formularios.php#formato">Dar formato a un formulario</a></li>
+                                                                             <li><a href="formularios.php#navegacion">Navegación en formularios</a></li>
+                                                                        </ol>
+
+                                                                    </li>
+
+                                                                    <li><span>FRAMES E IFRAME</span>
+
+                                                                        <ol class="lMenuI">
+                                                                             <li><a href="frames.php">¿Qué son los frames?</a></li>
+                                                                             <li><a href="frames.php#crear">Crear una página web con Frames</a></li>
+                                                                             <li><a href="frames.php#iframe">Usar &lt;iframe&gt;</a></li>
+                                                                        </ol>
+
+                                                                    </li>
+
+                                                                    <li><span>CONFIGURAR PÁGINA (I)</span>
+
+                                                                        <ol class="lMenuI">
+                                                                            <li><a href="cabecera-de-pagina-web.php#base">Definir URL base del sitio WEB</a></li>
+                                                                            <li><a href="cabecera-de-pagina-web.php#css">Definir estilos CSS</a></li>
+                                                                            <li><a href="cabecera-de-pagina-web.php#link">Enlazar con archivos externos</a></li>
+                                                                            <li><a href="cabecera-de-pagina-web.php#javascript">Incluir JavaScript en una página web</a></li>
+                                                                        </ol>
+
+                                                                     </li>
+
+                                                                    <li><span>CONFIGURAR PÁGINA (II)</span>
+
+                                                                        <ol class="lMenuI">
+                                                                            <li><a href="configurar-pagina-web.php">Cuerpo de la página</a></li>
+                                                                            <li><a href="configurar-pagina-web.php#fondo">Poner una imagen como fondo de una página WEB</a></li>
+                                                                            <li><a href="configurar-pagina-web.php#encabezados">Encabezados</a></li>
+                                                                            <li><a href="configurar-pagina-web.php#hr">Insertar líneas separadoras</a></li>
+                                                                            <li><a href="configurar-pagina-web.php#div">Agrupar y colocar elementos &lt;div&gt;</a></li>
+                                                                            <li><a href="configurar-pagina-web.php#scroll">Contenido en movimiento</a></li>
+                                                                        </ol>
+
+                                                                     </li>
+
+                                                                    <li><span>EVENTOS EN HTML</span>
+
+                                                                        <ol class="lMenuI">
+                                                                            <li><a href="eventos.php">Eventos en HTML</a></li>
+                                                                        </ol>
+
+                                                                    </li>
+
+                                                                 </ol>
+
+							</nav>
+
+                </div>  <!-- CIERRE COLUMNA IZQUIERDA -->
+
+
+
+		<!-- COLUMNA DERECHA -->
+
+                <div class="colprincipal col-xs-12 col-sm-8 col-md-9" id="colD">
+
+
+                    <!-- ENCABEZADO COLUMNA DERECHA -->
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-12" id="fEncab">
+                            <h1>Tutorial de HTML</h1>
+                            <p>Introducción</p>
+                        </div>
+
+					</div>
+
+
+
+                    <!-- BOTONERA -->
+
+                    <nav class="row botonera">
+                        <div class="col-xs-12">
+                            <a href="texto.php"><img src="../base_images/boton-siguiente.gif" alt="Anterior"></a>
+                            <a href="eventos.php"><img src="../base_images/boton-ultimo.gif" alt="Última página"></a>
+                        </div>
+                    </nav>
+
+
+		<article>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                            <div class="row fAptdo">
+                                <div class="col-xs-12">
+                                    <img src="../base_images/pc1.png" alt="">
+                                    <a name="crear"></a>
+                                    <h2>Crear una página web</h2>
+                                </div>
+                            </div>
+
+                        <p>Si deseas aprender a crear una página web desde cero, primeramente debes conocer el lenguaje HTML (<abbr>HyperText Mark-up Language</abbr>, en inglés) o lenguaje de marcado hipertextual, que no es propiamente un lenguaje de programación sino más bien un sencillo lenguaje basado en etiquetas, como explicaremos a continuación.</p>
+
+                            <p>A su vez, cada etiqueta puede contener atributos, cuyos valores es recomendable que se indiquen entre comillas, como veremos más adelante.</p>
+
+                            <!-- ADS -->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                                                    </div>
+                            </div>
+
+                            <p>En el presente curso de HTML aprenderás a usar la versión <strong>HTML 4</strong>. Próximamente crearemos un curso con las novedades que traerá la versión <strong>HTML 5</strong>, que aporta grandes e importantes novedades pero que a fecha de hoy está fase de implantación por parte de los diferentes navegadores web.</p>
+
+                            <p>Y como supongo que estarás ansioso por aprender a crear una página web sin perder tiempo en cuestiones innecesarias, esto es todo lo que necesitas saber de momento: no vamos a entrar en preámbulos acerca de la historia de dicho lenguaje, entre otras cuestiones.</p>
+
+                            <!-- AYUDA -->
+                            <div class="imgI fHelp">
+                                <img src="../base_images/info.png" alt="Información" class="pull-left">
+                                <div>
+                                    <p>En el presente curso se explica el uso de algunas <strong>etiquetas y atributos</strong> que se encuentran desaconsejados u obsoletos en HTML 4 recomendándose usar en su lugar Hojas de Estilo en Cascada (<abbr>Cascading Style Sheets</abbr>) o <strong>CSS</strong>, pero debido a que nos estamos centrando exclusivamente en HTML es recomendable conocerlas.</p>
+                                </div>
+                            </div>
+
+                            <!-- RELACIONADO -->
+                            <div class="imgI fVer">
+                                <img src="../base_images/info1.gif" alt="Más información" class="pull-left imgVert">
+                                <p><span class="negrita">Relacionado</span>: [ <a href="../tutorial-css/">Tutorial de CSS</a> ]</p>
+                            </div>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="xhtml"></a>
+                                <h2>HTML y XHTML</h2>
+                            </div>
+                        </div>
+
+                        <p>Aparte de HTML existe también <strong>XHTML</strong>, que no es un lenguaje de etiquetas diferente ni tampoco otro lenguaje basado en el primero, sino un conjunto de especificaciones para escribir código HTML que sea interpretado del mismo modo por todos los navegadores web.</p>
+
+                        <p>Algo más adelante lo explicamos con más detalle.</p>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="necesito"></a>
+                                <h2>¿Qué necesito para comenzar?</h2>
+                            </div>
+                        </div>
+
+                        <p>Para crear una página web no necesitas más que un simple editor de textos como el Bloc de Notas incluido en Windows. Lo puedes abrir desde: <span class="rMenu">Inicio, Todos los programas, Accesorios, Bloc de notas</span>:</p>
+
+                        <p class="centrado"><img data-original="./images/block-de-notas.jpg" src="../base_images/lazy_gray.gif" class="lazy img-responsive" alt="Escribir HTML "></p>
+
+                        <p>Sin embargo y precisamente debido a su simplicidad puede no resultarte lo más cómodo, así pues te recomiendo que descargues <a href="http://notepad-plus-plus.org/download" target="_blank" rel="external nofollow">NotePad++</a> (aunque la web está en inglés, este programa gratis puede instalarse seleccionando el idioma español).</p>
+
+                        <p>Para <span class="negrita">descargar NotePad++</span> desde su <a href="http://notepad-plus-plus.org/download" target="_blank" rel="external nofollow">página web</a> haz clic en <span class="rMenu">Download the current version</span> y después en el enlace a la última versión disponible:</p>
+
+                        <div class="imgCentro">
+                            <img data-original="./images/descargar-notepad-1.jpg" src="../base_images/lazy_gray.gif" class="lazy img-responsive" alt="">
+                            <img data-original="./images/descargar-notepad-2.jpg" src="../base_images/lazy_gray.gif" class="lazy img-responsive" alt="">
+                        </div>
+
+                        <p>Finalmente, si deseas probar el código HTML de los ejemplos, puedes copiarlo rápidamente al Portapapeles del sistema haciendo clic en la opción <span class="rMenu">Copy</span> que se mostrará en la parte superior derecha cuando te sitúes sobre él, para después pegarlo en el archivo de ejemplo que hayas creado:</p>
+
+                        <p class="centrado"><img data-original="./images/copiar-ejemplo.jpg" src="../base_images/lazy_gray.gif" class="lazy img-responsive" alt="Ejemplo de página web"></p>
+
+                        <p>Debes guardar cada ejemplo de página web con extensión <span class="negrita">.htm</span> o <span class="negrita">.html</span>, y después hacer doble clic sobre el archivo para verla en tu navegador web.</p>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="estructura"></a>
+                                <h2>Estructura básica de una página web</h2>
+                            </div>
+                        </div>
+
+                        <p>En el siguiente código HTML puedes ver la estructura básica de una página web. Crea un archivo <span class="negsub">ejemplo1.html</span> y cópialo (sin los números de línea, sitúa el cursor sobre el ejemplo y haz clic con el botón izquierdo en la opción <span class="negrita">Copy</span> que se mostrará).</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_1" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre id="html_ejemplo_estructura_1" class="sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;html&gt;</span></li><li class="box box-top" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>    <span class="sh_keyword">&lt;head&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;title&gt;</span>Mi primera página WEB<span class="sh_keyword">&lt;/title&gt;</span></li><li class="box box-bot" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>    <span class="sh_keyword">&lt;/head&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li class="box box-top" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>    <span class="sh_keyword">&lt;body&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_comment">&lt;!-- Esto es un comentario --&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        ¡ Mi primera página web !</li><li class="box box-bot" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>    <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Mi primera página WEB&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;!-- Esto es un comentario --&gt;
+        ¡ Mi primera página web !
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div></code>
+
+                        <p>Para <span class="negrita">insertar comentarios</span> (que no serán visibles) al visualizar la página web, los escribiremos entre <span class="rMenu">&lt;!--</span> y <span class="rMenu">--&gt;</span>.</p>
+
+                        <!-- DESCARGAR EJEMPLO -->
+                        <p><a href="./ejemplos/01_introduccion/01_estructura_basica.zip"><img src="../base_images/descargar_ejemplo.gif" alt="Descargar ejemplo"></a></p>
+
+                        <p>Como puedes observar, el contenido principal de esta página web se halla entre la etiqueta de apertura <span class="rMenu">&lt;html&gt;</span> y su correspondiente etiqueta de cierre <span class="rMenu">&lt;/html&gt;</span> (que contiene una '/'), y que hay dos secciones principales contenidas entre las etiquetas <span class="rMenu">&lt;head&gt;</span> y <span class="rMenu">&lt;body&gt;</span> (y sus respectivas etiquetas de cierre).</p>
+
+                        <p>Dentro de <span class="rMenu">&lt;head&gt;</span> se ponen etiquetas HTML con las que se definen configuraciones generales de la página: en nuestro jemplo tenemos la etiqueta <span class="rMenu">&lt;title&gt;</span> que indica el título de la página a mostrar en el navegador web.</p>
+
+                        <p>En la etiqueta <span class="rMenu">&lt;body&gt;</span> pondremos el contenido de la página (texto, imágenes, tablas, etc.).</p>
+
+                        <!-- ADS -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                                            </div>
+                        </div>
+
+                        <p>Tanto dentro de <span class="rMenu">&lt;head&gt;</span> como de <span class="rMenu">&lt;body&gt;</span> pueden haber otras etiquetas, que veremos más adelante.</p>
+
+                        <p>En la siguiente imagen puedes ver cómo se vería el código HTML mostrado en un navegador:</p>
+
+                        <p class="centrado"><img data-original="./images/pagina-web.jpg" src="../base_images/lazy_gray.gif" class="lazy img-responsive" alt="Página web"></p>
+
+                        <p>Observa que en el cuerpo de la página web está el texto que hemos escrito en la etiqueta <span class="rMenu">&lt;body&gt;</span>, y en la pestaña el de la etiqueta <span class="rMenu">&lt;title&gt;</span> (en algunos navegadores podrá verse en la barra de título de la ventana).</p>
+
+                        <p>Para más información sobre la correcta estructura de una página web consulta la siguiente sección sobre <span class="rMenu">&lt;doctype&gt;</span>.</p>
+
+                        <!-- RELACIONADO -->
+                        <div class="imgI fVer">
+                            <img src="../base_images/info1.gif" alt="Más información" class="pull-left imgVert">
+                            <p><span class="negrita">Relacionado</span>: [ <a href="http://www.w3schools.com/tags/default.asp" target="_blank" rel="external nofollow">Referencia HTML 4.01 / XHTML 1.0</a> ]</p>
+                        </div>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="head"></a>
+                                <h2>&lt;head&gt;</h2>
+                            </div>
+                        </div>
+
+                        <p>La etiqueta <span class="rMenu">&lt;head&gt;</span> puede contener diversa información sobre la página web, indicando al navegador qué tipo de documento es, autorizando el acceso a los <strong>robots</strong> de los buscadores, etc.</p>
+
+                        <p>A continuación describiremos algunas de las etiquetas HTML más importantes que puede contener.</p>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="title"></a>
+                                <h2>Título de la página</h2>
+                            </div>
+                        </div>
+
+                        <p>Con la etiqueta <span class="rMenu">&lt;title&gt;</span> indicamos el título de la página, que será mostrado en la barra de título o en la pestaña del navegador web, en la que se haya cargado la página web, así como en los resultados devueltos por los buscadores web.</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_11" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_11" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=11&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre id="html_configurar_pagina_title" class="sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;html&gt;</span></li><li>    <span class="sh_keyword">&lt;head&gt;</span></li><li class="box" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;title&gt;</span>Página WEB de ejemplo: configurar la página<span class="sh_keyword">&lt;/title&gt;</span></li><li>    <span class="sh_keyword">&lt;/head&gt;</span></li><li>    <span class="sh_keyword">&lt;body&gt;</span></li><li>        ¡ Hola mundo !</li><li>    <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Página WEB de ejemplo: configurar la página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        ¡ Hola mundo !
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div></code>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="meta"></a>
+                                <h2>La etiqueta &lt;meta&gt;</h2>
+                            </div>
+                        </div>
+
+                        <p>Con la etiqueta <span class="rMenu">meta</span> ofrecemos información sobre la página a los buscadores y los navegadores web.</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_12" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_12" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=12&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre id="html_configurar_pagina_meta" class="sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;html&gt;</span></li><li>    <span class="sh_keyword">&lt;head&gt;</span></li><li>        <span class="sh_keyword">&lt;title&gt;</span>Página WEB de ejemplo: configurar la página<span class="sh_keyword">&lt;/title&gt;</span></li><li class="box box-top" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">name</span><span class="sh_symbol">=</span><span class="sh_string">"keywords"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"programacion web, HTML, CSS, JavaScript, PHP"</span> <span class="sh_keyword">/&gt;</span></li><li class="box box-bot" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">name</span><span class="sh_symbol">=</span><span class="sh_string">"description"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"Aprende a programar páginas WEB profesionales"</span> <span class="sh_keyword">/&gt;</span></li><li>    <span class="sh_keyword">&lt;/head&gt;</span></li><li>    <span class="sh_keyword">&lt;body&gt;</span></li><li>        ¡ Hola mundo !</li><li>    <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Página WEB de ejemplo: configurar la página&lt;/title&gt;
+        &lt;meta name="keywords" content="programacion web, HTML, CSS, JavaScript, PHP" /&gt;
+        &lt;meta name="description" content="Aprende a programar páginas WEB profesionales" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        ¡ Hola mundo !
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div></code>
+
+                        <p>En la etiqueta del ejemplo con el atributo <span class="rMenu">name="keywords"</span> se definen las palabras clave de la página web. Se recomienda como mucho escribir unos 60 caracteres.</p>
+
+                        <p>En la etiqueta con el atributo <span class="rMenu">name="description"</span> debemos escribir un texto descriptivo de la página web, no debiendo contener más de 160 caracteres. Este texto aparecerá en los resultados devueltos por los buscadores web.</p>
+
+                        <p>Aquí tienes otros ejemplos útiles:</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_13" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_13" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=13&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre id="html_configurar_pagina_meta_2" class="sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;html&gt;</span></li><li>    <span class="sh_keyword">&lt;head&gt;</span></li><li>        <span class="sh_keyword">&lt;title&gt;</span>Página WEB de ejemplo: configurar la página<span class="sh_keyword">&lt;/title&gt;</span></li><li class="box box-top" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">http-equiv</span><span class="sh_symbol">=</span><span class="sh_string">"content-type"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"text/html;charset=UTF-8"</span> <span class="sh_keyword">/&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">http-equiv</span><span class="sh_symbol">=</span><span class="sh_string">"Cache-Control"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"no-cache"</span> <span class="sh_keyword">/&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">http-equiv</span><span class="sh_symbol">=</span><span class="sh_string">"refresh"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"200"</span> <span class="sh_keyword">/&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">http-equiv</span><span class="sh_symbol">=</span><span class="sh_string">"refresh"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"10; url=http://www.google.com"</span> <span class="sh_keyword">/&gt;</span></li><li class="box box-bot" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">name</span><span class="sh_symbol">=</span><span class="sh_string">"robots"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"all"</span> <span class="sh_keyword">/&gt;</span></li><li>    <span class="sh_keyword">&lt;/head&gt;</span></li><li>    <span class="sh_keyword">&lt;body&gt;</span></li><li>        ¡ Hola mundo !</li><li>    <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Página WEB de ejemplo: configurar la página&lt;/title&gt;
+        &lt;meta http-equiv="content-type" content="text/html;charset=UTF-8" /&gt;
+        &lt;meta http-equiv="Cache-Control" content="no-cache" /&gt;
+        &lt;meta http-equiv="refresh" content="200" /&gt;
+        &lt;meta http-equiv="refresh" content="10; url=http://www.google.com" /&gt;
+        &lt;meta name="robots" content="all" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        ¡ Hola mundo !
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div></code>
+
+                        <p>En la primera etiqueta se define el <strong>juego de caracteres</strong> usado en la página web como <span class="negrita">ISO-8859-1</span> (en español).</p>
+
+                        <p>En la segunda etiqueta especificamos al navegador web que no debe guardar <span class="negrita">caché de la página</span>.</p>
+
+                        <p>En la tercera etiqueta indicamos que la página web debe recargarse tras 200 segundos, y en la cuarta que a los 10 segundos el navegador web debe redirigirnos a la URL indicada.</p>
+
+                        <p>Por último, en la quinta indicamos que la página web puede ser indexada por todos los buscadores web.</p>
+
+                        <!-- AYUDA -->
+                        <div class="imgI fHelp">
+                            <img src="../base_images/info.png" alt="Información" class="pull-left">
+                            <div>
+                                <p>Los atributos <span class="rMenu">description</span> y <span class="rMenu">keywords</span> se deben definir para cada página web individualmente (no pongas lo mismo en todo el sitio web).</p>
+                            </div>
+                        </div>
+
+                        <!-- CÓMO -->
+                        <div class="imgI fVer">
+                            <img src="../base_images/info1.gif" alt="Más información" class="pull-left imgEnTexto">
+                            <p><span class="negrita">¿Cómo se hace esto en...?</span>: [ <a href="http://www.w3schools.com/tags/tag_meta.asp" target="_blank" rel="external nofollow">Etiqueta META</a> ] - [ <a href="http://www.w3.org/International/O-charset" target="_blank" rel="external nofollow">Codificación de caracteres</a> ]</p>
+                        </div>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="dochtml"></a>
+                                <h2>Doctype (HTML)</h2>
+                            </div>
+                        </div>
+
+                        <p>Mediante la etiqueta <span class="rMenu">doctype</span> (que debe ponerse antes de la etiqueta <span class="rMenu">&lt;html&gt;</span>) se informa al navegador web de la <span class="rMenu">versión de HTML/XHTML</span> de la página, haciendo referencia a una <strong>DTD</strong> ('Document Type Definition' o Declaración de Tipo de Documento en español) que especifica las reglas para construir el documento de modo que los navegadores web lo muestren correctamente.</p>
+
+                        <p>En caso de no definir ningún Doctype el navegador web entrará en modo <strong>quirks</strong> (de compatibilidad), pero no todos lo aplican del mismo modo con lo cual es posible que no se visualice del mismo modo en todos ellos.</p>
+
+                        <p>A continuación describimos los diferentes Doctype utilizados para indicar la versión de HTML usadas.</p>
+
+                        <p>* <span class="negsub">HTML 4.01 Strict</span>: contiene todas las etiquetas HTML y sus atributos, NO INCLUYENDO elementos desactualizados o presentacionales (como la etiqueta <span class="rMenu">&lt;font&gt;</span>), no permitiendo tampoco los <strong>frames</strong> con la etiqueta <span class="rMenu">&lt;frameset&gt;</span>.</p>
+
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_3" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_3" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=3&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre class="html_configurar_pagina_doctype sh_html snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">HTML</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD HTML 4.01//EN"</span> <span class="sh_string">"http://www.w3.org/TR/html4/strict.dtd"</span> <span class="sh_preproc">&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" &gt;
+</pre></div></div></code>
+
+                        <p>* <span class="negsub">HTML 4.01 Transitional</span>: contiene todas las etiquetas HTML y sus atributos INCLUYENDO elementos desactualizados o presentacionales (como la etiqueta <span class="rMenu">&lt;font&gt;</span>). No admite el uso de frames con la etiqueta <span class="rMenu">&lt;frameset&gt;</span> .</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_4" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_4" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=4&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre class="html_configurar_pagina_doctype sh_html snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">HTML</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD HTML 4.01 Transitional//EN"</span> <span class="sh_string">"http://www.w3.org/TR/html4/loose.dtd"</span> <span class="sh_preproc">&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd" &gt;
+</pre></div></div></code>
+
+                        <p>* <span class="negsub">HTML 4.01 Frameset</span>: como el anterior, pero admite el uso de frames con la etiqueta <span class="rMenu">&lt;frameset&gt;</span> y <span class="rMenu">&lt;frame&gt;</span>.</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_5" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_5" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=5&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre class="html_configurar_pagina_doctype sh_html snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">HTML</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD HTML 4.01 Frameset//EN"</span> <span class="sh_string">"http://www.w3.org/TR/html4/frameset.dtd"</span> <span class="sh_preproc">&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd" &gt;
+</pre></div></div></code>
+
+                        <p>Ejemplo de definición de página como <span class="negrita">HTML 4.01 Transitional</span>:</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_9" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_9" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=9&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre id="html_configurar_pagina_doctype_ejemplo_1" class="sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li class="box" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">HTML</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD HTML 4.01 Transitional//EN"</span> <span class="sh_string">"http://www.w3.org/TR/html4/loose.dtd"</span> <span class="sh_preproc">&gt;</span></li><li><span class="sh_keyword">&lt;html&gt;</span></li><li>    <span class="sh_keyword">&lt;head&gt;</span></li><li>        <span class="sh_keyword">&lt;title&gt;</span>Página WEB de ejemplo: configurar la página<span class="sh_keyword">&lt;/title&gt;</span></li><li>    <span class="sh_keyword">&lt;/head&gt;</span></li><li>    <span class="sh_keyword">&lt;body&gt;</span></li><li>        <span class="sh_keyword">&lt;p&gt;</span>¡ Hola mundo !<span class="sh_keyword">&lt;/p&gt;</span></li><li>    <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd" &gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Página WEB de ejemplo: configurar la página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;¡ Hola mundo !&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div></code>
+
+                        <p>Actualmente es recomendable utilizar un Doctype que indique que la página web cumple con las especificaciones <span class="rMenu">XHTML</span>. Las explicamos a continuación.</p>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="docxhtml"></a>
+                                <h2>Doctype (XHTML)</h2>
+                            </div>
+                        </div>
+
+                        <p>* <span class="negsub">XHTML 1.0 Strict</span>: indica que la página web sigue las normas de XHTML, no permitiéndose el uso de etiquetas HTML ni atributos que se encuentren desaconsejados (<strong>deprecated</strong>) ni obsoletos (<strong>obsolete</strong>), siendo también completamente estricto en cuanto al uso de las especificaciones para escribir código XHTML válido.</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_6" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_6" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=6&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre class="html_configurar_pagina_doctype sh_html snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">html</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD XHTML 1.0 Strict//EN"</span> <span class="sh_string">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span><span class="sh_preproc">&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre></div></div></code>
+
+                        <p>* <span class="negsub">XHTML 1.0 Transitional</span>: indica que la página web cumple las especificaciones XHTML pero siendo más permisivo que el anterior.</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_7" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_7" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=7&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre class="html_configurar_pagina_doctype sh_html snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">html</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD XHTML 1.0 Transitional//EN"</span> <span class="sh_string">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</span><span class="sh_preproc">&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+</pre></div></div></code>
+
+                        <p>* <span class="negsub">XHTML 1.0 Frameset</span>: como el anterior, pero admite el uso de frames con las etiquetas <span class="rMenu">&lt;frameset&gt;</span> y <span class="rMenu">&lt;frame&gt;</span>.</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_8" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_8" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=8&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre class="html_configurar_pagina_doctype sh_html snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">html</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD XHTML 1.0 Frameset//EN"</span> <span class="sh_string">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span><span class="sh_preproc">&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre></div></div></code>
+
+                        <p>De entre los anteriores Doctype es recomendable utilizar <span class="negrita">XHTML 1.0 Transitional</span> para indicar que la página cumple con la especificación XHTML y sea mostrada del mismo modo por los diferentes navegadores web.</p>
+
+                        <p>Veamos un ejemplo de definición de página como XHTML 1.0 Transitional (al definir alguno de los tipos XHTML hay que agregar un atributo a la etiqueta de apertura <span class="rMenu">&lt;html&gt;</span> y una etiqueta <span class="rMenu">&lt;meta&gt;</span> en la sección <span class="rMenu">&lt;head&gt;</span> de la página, con la que indicaremos que se utilizará el <span class="negrita">juego de caracteres 'UTF-8'</span>):</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_10" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_10" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=10&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre id="html_configurar_pagina_doctype_ejemplo_2" class="sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li class="box box-top" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">html</span><span class="sh_normal"> </span><span class="sh_type">PUBLIC</span><span class="sh_normal"> </span><span class="sh_string">"-//W3C//DTD XHTML 1.0 Transitional//EN"</span> <span class="sh_string">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</span><span class="sh_preproc">&gt;</span></li><li class="box box-bot" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span><span class="sh_keyword">&lt;html</span> <span class="sh_type">xmlns</span><span class="sh_symbol">=</span><span class="sh_string">"http://www.w3.org/1999/xhtml"</span><span class="sh_keyword">&gt;</span></li><li>    <span class="sh_keyword">&lt;head&gt;</span></li><li>        <span class="sh_keyword">&lt;title&gt;</span>Página WEB de ejemplo: configurar la página<span class="sh_keyword">&lt;/title&gt;</span></li><li class="box" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;meta</span> <span class="sh_type">http-equiv</span><span class="sh_symbol">=</span><span class="sh_string">"Content-Type"</span> <span class="sh_type">content</span><span class="sh_symbol">=</span><span class="sh_string">"text/html; charset=UTF-8"</span> <span class="sh_keyword">/&gt;</span></li><li>    <span class="sh_keyword">&lt;/head&gt;</span></li><li>    <span class="sh_keyword">&lt;body&gt;</span></li><li>        <span class="sh_keyword">&lt;p&gt;</span>¡ Hola mundo !<span class="sh_keyword">&lt;/p&gt;</span></li><li>    <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Página WEB de ejemplo: configurar la página&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;¡ Hola mundo !&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div></code>
+
+                        <p>En el siguiente punto explicamos las pautas que debes seguir si quieres escribir código XHTML válido.</p>
+
+                        <!-- AYUDA -->
+                        <div class="imgI fHelp">
+                            <img src="../base_images/info.png" alt="Información" class="pull-left">
+                            <div>
+                                <p>En la mayoría de ejemplos del presente curso no definimos ningún Doctype por no ser necesario para su correcto funcionamiento, pero una vez más te recomendamos que utilices <span class="negrita">XHTML 1.0 Transitional</span> y escribas código XHTML válido.</p>
+                            </div>
+                        </div>
+
+                        <!-- CÓMO -->
+                        <div class="imgI fVer">
+                            <img src="../base_images/info1.gif" alt="Más información" class="pull-left imgEnTexto">
+                            <p><span class="negrita">Relacionado</span>: [ <a href="http://www.w3schools.com/tags/tag_doctype.asp" target="_blank" rel="external nofollow">Doctype</a> ]</p>
+                        </div>
+
+                    </section>
+
+                    <!-- APARTADO -->
+
+                    <section>
+
+                        <div class="row fAptdo">
+                            <div class="col-xs-12">
+                                <img src="../base_images/pc1.png" alt="">
+                                <a name="Escribir código XHTML válido"></a>
+                                <h2>Escribir código XHTML válido</h2>
+                            </div>
+                        </div>
+
+                        <p>Algunas consideraciones a tener a cuenta a la hora de escribir código XHTML válido son:</p>
+
+                        <ul class="lista">
+                            <li>Define un Doctype de tipo <span class="negrita">XHTML 1.0 Strict</span> o <span class="negrita">XHTML 1.0 Transitional</span> (recomendado) quedando la estructura básica de la página web tal y como se muestra al final del punto anterior.</li>
+                            <li>Aparte de definir el <span class="negrita">juego de caracteres</span> de la página web como <strong>UTF-8</strong> (mediante la etiqueta <span class="rMenu">&lt;meta&gt;</span> en la estructura anterior) también deberás guardar el archivo utilizando dicho juego de caracteres (para que se no se muestren caracteres extraños en lugar de tildes y otros símbolos).<p>
+
+                                </p><p>Para definir el juego de caracteres de un archivo deberás seleccionarlo en el momento de guardarlo (aunque dependiendo del editor que uses es posible que haya que hacerlo de otro modo).</p>
+
+                                <p class="centrado"><img data-original="./images/archivo-utf8.jpg" src="../base_images/lazy_gray.gif" class="lazy img-responsive" alt="UTF-8"></p>
+                            </li>
+                        </ul>
+
+                        <ul class="lista">
+                            <li>
+                                <p>Es <span class="negsub">muy importante</span> que tengas en cuenta que toda etiqueta HTML debe tener una apertura y un cierre, y que deben estar en el orden correcto.</p>
+                                <p>Algunas etiquetas como <span class="rMenu">&lt;img/&gt;</span> o <span class="rMenu">&lt;br/&gt;</span> constan de un sólo <span class="negrita">tag</span>, cerrándose directamente con una '/' al final de la misma.</p>
+                                <p>En los ejemplos de las secciones anteriores puedes observar que la etiqueta <span class="rMenu">&lt;title&gt;</span> se encuentra anidada dentro de <span class="rMenu">&lt;head&gt;</span>, y ésta a su vez está dentro de la etiqueta principal <span class="rMenu">&lt;html&gt;</span>, junto con <span class="rMenu">&lt;body&gt;</span>: para que la estructura de la página web sea correcta no puedes cerrar una etiqueta antes de haber cerrado las que estén anidadas dentro de ella.</p>
+                            </li>
+                            <li><p>No utilices etiquetas HTML consideradas como desaconsejadas (deprecated) u obsoletas (obsolete).</p>
+                                <p>Normalmente son consideradas de dicho modo debido a su antigüedad y a que es recomendable utilizar CSS en su lugar.</p>
+                            </li>
+                            <li>Las etiquetas y sus atributos deben escribirse en minúsculas.</li>
+                            <li>El valor de los atributos (los veremos más adelante) debe estar entre comillas, por ejemplo: <span class="rMenu">&lt;body text="yellow" ... &gt;</span>.</li>
+                            <li>En una página web no puede haber más de una etiqueta HTML con un mismo valor en el atributo <span class="rMenu">id</span> (permite identificarlas para acceder a ellas desde otros lenguajes), el cual usaremos en nuestros cursos de informática gratis de Hojas de Estilo CSS y Javascript.</li>
+                            <li><p>Existen etiquetas HTML de tipo <span class="negrita">block</span> que al ser usadas crean una nueva línea (como por ejemplo: <span class="rMenu">&lt;p&gt;</span>, <span class="rMenu">&lt;h1&gt;</span>, <span class="rMenu">&lt;div&gt;</span>, etc.), y otras de tipo <span class="negrita">inline</span> que no (como <span class="rMenu">&lt;a&gt;</span>, <span class="rMenu">&lt;b&gt;</span>, <span class="rMenu">&lt;i&gt;</span>, <span class="rMenu">&lt;span&gt;</span>, <span class="rMenu">&lt;form&gt;</span>...): no pongas elementos <span class="negrita">block</span> dentro elementos inline, aunque sí es posible poner elementos <span class="negrita">block</span> dentro de otros elementos <span class="negrita">block</span>.</p>
+                                  <p>En los enlaces de la parte inferior puedes consultar qué elementos HTML y atributos se encuentran desaconsejados.</p>
+                            </li>
+                        </ul>
+
+                        <p>En el siguiente ejemplo se muestra cómo erróneamente se ha cerrado antes la etiqueta <span class="rMenu">&lt;head&gt;</span> que la etiqueta <span class="rMenu">&lt;title&gt;</span> (que está dentro de ella):</p>
+
+<code><div class="snippet-container" style="undefined;"><div class="sh_navy snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="#">copy</a><a class="snippet-text sh_url" href="#">text</a><a class="snippet-window sh_url" href="#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 1px; top: 2px; width: 39px; height: 15px; z-index: 99;"><embed id="ZeroClipboardMovie_2" src="../base_js/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="39" height="15" name="ZeroClipboardMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=39&amp;height=15" wmode="transparent"></div></div><pre id="html_ejemplo_estructura_2" class="sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;html&gt;</span></li><li class="box box-top" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>    <span class="sh_keyword">&lt;head&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;title&gt;</span>Mi primera página WEB<span class="sh_keyword">&lt;/head&gt;</span></li><li class="box box-bot" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>    <span class="sh_keyword">&lt;/title&gt;</span></li><li>    <span class="sh_keyword">&lt;body&gt;</span></li><li class="box box-top" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;img</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"imag1"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_type">imagen1.jpg</span><span class="sh_normal"> </span><span class="sh_keyword">/&gt;</span></li><li class="box box-mid" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;img</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"imag2"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"imagen2.jpg"</span> <span class="sh_keyword">&gt;</span></li><li class="box box-bot" style="margin-left: -3.3em;"><span class="box-sp" style="width: 21px;">&nbsp;</span>        <span class="sh_keyword">&lt;img</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"imag2"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"imagen3.jpg"</span> <span class="sh_keyword">/&gt;</span></li><li>    <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Mi primera página WEB&lt;/head&gt;
+    &lt;/title&gt;
+    &lt;body&gt;
+        &lt;img id="imag1" src=imagen1.jpg /&gt;
+        &lt;img id="imag2" src="imagen2.jpg" &gt;
+        &lt;img id="imag2" src="imagen3.jpg" /&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div></code>
+
+                        <p>Puedes ver cómo se han cerrado correctamente todas las etiquetas HTML <span class="rMenu">img</span> con una '/' al final, menos la segunda.</p>
+
+                        <p>Asimismo, no se ha puesto entre comillas el nombre de la primera imagen en el atributo <span class="rMenu">src</span>, lo cual es también incorrecto.</p>
+
+                        <p>Otro error es que la segunda y la tercera imagen tienen el mismo valor en el atributo <span class="rMenu">id</span>.</p>
+
+                        <p>Las etiquetas HTML comparten algunos <span class="negrita">atributos comunes</span>:</p>
+
+                      <ul class="lista">
+                          <li><span class="rMenu">name</span>: nombre del elemento, que salvo casos excepcionales (como en caso de usar componentes de tipo <span class="rMenu">input radio</span>) debe ser único para un elemento.</li>
+                          <li><span class="rMenu">id</span>: identificador del elemento, que debe ser único para cada elemento.</li>
+                          <li><span class="rMenu">title</span>: especifica información extra</li>
+                          <li><span class="rMenu">class</span>: indica una clase CSS que le será aplicada.</li>
+                          <li><span class="rMenu">style</span>: aplica estilos CSS.</li>
+                      </ul>
+
+                      <!-- AYUDA -->
+                      <div class="imgI fHelp">
+                          <img src="../base_images/info.png" alt="Información" class="pull-left">
+                          <div>
+                              <p>Normalmente el atributo <span class="rMenu">name</span> se usa en formularios y sus componentes, mientras que para otros elementos HTML se usa <span class="rMenu">id</span> para identificarlos.</p>
+                          </div>
+                      </div>
+
+                      <!-- RELACIONADO -->
+                      <div class="imgI fVer">
+                          <img src="../base_images/info1.gif" alt="Más información" class="pull-left imgEnTexto">
+                          <p><span class="negrita">Relacionado</span>: [ <a href="http://validator.w3.org/" target="_blank" rel="external nofollow">Validar código HTML</a> ] - [ <a href="http://www.w3schools.com/tags/tag_doctype.asp" target="_blank" rel="external nofollow">Doctype</a> ] - [ <a href="http://en.wikipedia.org/wiki/HTML_element#Block_elements" target="_blank" rel="external nofollow">Etiquetas block</a> ] - [ <a href="http://en.wikipedia.org/wiki/HTML_element#Inline_elements" target="_blank" rel="external nofollow">Etiquetas inline</a> ] - [ <a href="http://www.w3.org/TR/1999/REC-html401-19991224/index/elements.html" target="_blank" rel="external nofollow">Etiquetas HTML</a> ] - [ <a href="http://www.w3.org/TR/1999/REC-html401-19991224/index/attributes.html" target="_blank" rel="external nofollow">Atributos HTML</a> ]</p>
+                      </div>
+
+                    </section>
+
+
+                </article>
+
+
+		<!-- BOTONERA -->
+
+                <div class="row botonera">
+                    <div class="col-xs-12">
+                            <a href="texto.php"><img src="../base_images/boton-siguiente.gif" alt="Anterior"></a>
+                            <a href="eventos.php"><img src="../base_images/boton-ultimo.gif" alt="Última página"></a>
+                    </div>
+                </div>
+
+
+                <!-- ADS -->
+                <div class="row">
+                    <div class="col-xs-12">
+                                            </div>
+                </div>
+
+            </div>  <!-- CIERRE COLUMNA DERECHA -->
+
+
+        </div> <!-- CIERRE DIV CONTENIDO -->
+
+
+        <!-- PIE (footer) -->
+
+        <footer>
+            <div class="row equal" id="fila-pie">
+                
+					<div class="col-xs-12 col-sm-2">
+						<div id="pie-imgs">						
+	                        <img src="https://informaticapc.com/base_images/licencia.png" id="imgLicencia1" alt="Licencia">
+							<p><a href="https://informaticapc.com/cookies-y-privacidad.php" rel="nofollow" target="_blank">Aviso legal y Políticas</a></p>
+                        </div>
+					</div>
+
+					<div class="col-xs-12 col-sm-10" id="pie-desc">
+                        <div>La mayor parte de los contenidos de esta web se encuentran registrados en la Propiedad Intelectual y bajo licencia Creative Commons: puede distribuirlos, copiarlos y exhibirlos <span class="negsub">haciendo clara referencia a esta web</span>. No puede modificarlos ni obtener beneficio económico directo o indirecto sin nuestro consentimiento.</div>
+					</div>
+            </div>
+        </footer>
+
+
+        </div> <!-- CIERRE CONTENEDOR PRINCIPAL -->
+
+        <div class="row" id="filaCierreBody"><div id="dCookies" class="col-xs-12" style="top: 629px; display: block;">
+    <span>Usamos cookies para ofrecerte una experiencia mejorada, el continuar navegando supone que aceptas su uso</span>
+    <p>
+    	<input type="button" id="cerrarCookies" value="Cerrar" class="btn btn-primary">
+    	<input type="button" id="mostrarCookies" value="Más información" class="btn btn-primary">
+	</p>
+</div></div>
+
+    
+
+
+
+</body></html>
